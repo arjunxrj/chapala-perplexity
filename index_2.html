@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Chapala - Mexican Cuisine & Tequila Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__branding">
+                    <h1 class="header__title">Casa Chapala</h1>
+                    <p class="header__tagline">Mexican Cuisine & Tequila Bar</p>
+                </div>
+                <div class="header__locations">
+                    <div class="location">
+                        <h3>Austin Location</h3>
+                        <p>9041 Research Blvd. Austin, TX 78758</p>
+                        <p>(512) 459-4242</p>
+                        <p>casachapala.com</p>
+                    </div>
+                    <div class="location">
+                        <h3>Bastrop Location</h3>
+                        <p>1800 Walnut St. Bastrop, TX 78602</p>
+                        <p>(512) 985-5788</p>
+                        <p>casachapalabastrop.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Special Promotions Banner -->
+    <section class="promotions">
+        <div class="container">
+            <div class="promotions__content">
+                <h2>Special Events & Promotions</h2>
+                <div class="promotions__grid">
+                    <div class="promotion-card promotion-card--featured">
+                        <h3>🎵 Mariachi Every Friday!</h3>
+                    </div>
+                    <div class="promotion-card promotion-card--featured">
+                        <h3>🍹 Happy Hour</h3>
+                        <p>Mon-Thu 11AM-7PM, Fri 11AM-6PM</p>
+                    </div>
+                </div>
+                <div class="weekly-specials">
+                    <h3>Weekly Specials</h3>
+                    <div class="specials-grid">
+                        <div class="special-item">
+                            <strong>Mondays:</strong> Kids eat FREE all day!
+                        </div>
+                        <div class="special-item">
+                            <strong>Tuesdays:</strong> Taco Tuesday $3.50 Street Tacos!
+                        </div>
+                        <div class="special-item">
+                            <strong>Wednesdays:</strong> Senior Day 15% off all food
+                        </div>
+                        <div class="special-item">
+                            <strong>Saturdays:</strong> $5 Patio RITAS! Any flavor
+                        </div>
+                        <div class="special-item">
+                            <strong>Sundays:</strong> BRUNCH BUFFET 9am-3pm
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="nav" id="main-nav">
+        <div class="container">
+            <div class="nav__content">
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__menu" id="nav-menu">
+                    <li><a href="#drinks" class="nav__link">Drinks</a></li>
+                    <li><a href="#appetizers" class="nav__link">Appetizers</a></li>
+                    <li><a href="#soups-salads" class="nav__link">Soups & Salads</a></li>
+                    <li><a href="#main-courses" class="nav__link">Main Courses</a></li>
+                    <li><a href="#fajitas" class="nav__link">Fajitas</a></li>
+                    <li><a href="#enchiladas" class="nav__link">Enchiladas</a></li>
+                    <li><a href="#vegetarian" class="nav__link">Vegetarian</a></li>
+                    <li><a href="#kids-menu" class="nav__link">Kids Menu</a></li>
+                    <li><a href="#desserts" class="nav__link">Desserts</a></li>
+                    <li><a href="#breakfast" class="nav__link">Breakfast</a></li>
+                </ul>
+                <div class="nav__search">
+                    <input type="text" id="search-input" placeholder="Search menu items..." class="form-control">
+                </div>
+                <button onclick="window.print()" class="btn btn--outline btn--sm">Print Menu</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Drinks Section -->
+            <section id="drinks" class="menu-section">
+                <h2 class="section-title">🍹 Drinks</h2>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">Frozen Margaritas</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-name="Avocado Margarita" data-price="12.00" data-category="Frozen Margaritas">
+                            <div class="menu-item__header">
+                                <h4>Avocado Margarita</h4>
+                                <span class="price">$12.00</span>
+                            </div>
+                            <p class="description">A blend of fresh avocado, 100% agave silver tequila, agave nectar, fresh lime, and lemon juice</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="La Penka" data-price="11.00" data-category="Frozen Margaritas">
+                            <div class="menu-item__header">
+                                <h4>La Penka</h4>
+                                <span class="price">$11.00</span>
+                            </div>
+                            <p class="description">100% agave tequila blanco with prickly pear mix and a little gran gala orange liquor</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Tangorita" data-price="27.00" data-category="Frozen Margaritas">
+                            <div class="menu-item__header">
+                                <h4>Tangorita</h4>
+                                <span class="price">$27.00</span>
+                            </div>
+                            <p class="description">The party starter! A margarita and two mini beers in one big margarita glass. Limit 1 per couple</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="House Margaritas" data-price="7.50" data-category="Frozen Margaritas">
+                            <div class="menu-item__header">
+                                <h4>House Margaritas</h4>
+                                <span class="price">$7.50</span>
+                            </div>
+                            <p class="description">100% Agave Tequila, fresh lime juice, agave nectar, orange liqueur</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Beer Rita" data-price="12.00" data-category="Frozen Margaritas">
+                            <div class="menu-item__header">
+                                <h4>Beer Rita</h4>
+                                <span class="price">$12.00</span>
+                            </div>
+                            <p class="description">18 Oz with XX or Coronita</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Grandeza Margarita" data-price="12.00" data-category="Frozen Margaritas">
+                            <div class="menu-item__header">
+                                <h4>Grandeza Margarita</h4>
+                                <span class="price">$12.00</span>
+                            </div>
+                            <p class="description">18 Oz Goblet Glass with traditional Margarita with Grandeza liqueur</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Mangonada" data-price="13.00" data-category="Frozen Margaritas">
+                            <div class="menu-item__header">
+                                <h4>Mangonada</h4>
+                                <span class="price">$13.00</span>
+                            </div>
+                            <p class="description">100% Agave Tequila, spicy mango mix with chamoy, tajin and fresh lime</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Casa Favorites</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-name="Pepino Rico" data-price="11.00" data-category="Casa Favorites">
+                            <div class="menu-item__header">
+                                <h4>Pepino Rico</h4>
+                                <span class="price">$11.00</span>
+                            </div>
+                            <p class="description">Tequila, muddled fresh cucumbers, mint, fresh squeezed orange, lime juice, agave nectar</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="El Tropico" data-price="11.00" data-category="Casa Favorites">
+                            <div class="menu-item__header">
+                                <h4>El Tropico</h4>
+                                <span class="price">$11.00</span>
+                            </div>
+                            <p class="description">Tequila, muddled fresh roasted jalapeño, roasted pineapple, fresh lime juice, agave nectar, cilantro, and mint</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="La Paloma" data-price="11.00" data-category="Casa Favorites">
+                            <div class="menu-item__header">
+                                <h4>La Paloma</h4>
+                                <span class="price">$11.00</span>
+                            </div>
+                            <p class="description">Tequila, fresh grapefruit juice, fresh lemon and lime juice, and sparkling grapefruit soda</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Ultimate Margarita" data-price="11.00" data-category="Casa Favorites">
+                            <div class="menu-item__header">
+                                <h4>Ultimate Margarita</h4>
+                                <span class="price">$11.00</span>
+                            </div>
+                            <p class="description">Tequila, fresh lime, lemon and orange muddled together with sweet and sour</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Cowboy Margarita" data-price="10.00" data-category="Casa Favorites">
+                            <div class="menu-item__header">
+                                <h4>Cowboy Margarita</h4>
+                                <span class="price">$10.00</span>
+                            </div>
+                            <p class="description">Tequila, Cointreau, fresh squeezed lime, orange and agave nectar and a dash of Blue Curacao</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Flaquita Rita" data-price="11.00" data-category="Casa Favorites">
+                            <div class="menu-item__header">
+                                <h4>Flaquita Rita</h4>
+                                <span class="price">$11.00</span>
+                            </div>
+                            <p class="description">Our Skinny Margarita made with 100% agave silver tequila with grand marnier, fresh lime, and agave nectar</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Appetizers Section -->
+            <section id="appetizers" class="menu-section">
+                <h2 class="section-title">🌶️ Appetizers</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-name="Table Side Guacamole" data-price="9.00" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Table Side Guacamole</h4>
+                            <span class="price">$9.00</span>
+                        </div>
+                        <p class="description">Hand mashed avocados with lime juice, pico de gallo, and our own seasoning blend</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Queso Flameado" data-price="12.99" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Queso Flameado</h4>
+                            <span class="price">$12.99</span>
+                        </div>
+                        <p class="description">Melted Oaxaca cheese topped with chorizo, grilled peppers & onions. Served flaming with warm tortillas</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Camarones Coco" data-price="13.99" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Camarones Coco</h4>
+                            <span class="price">$13.99</span>
+                        </div>
+                        <p class="description">Hand dipped shrimp, tossed in shredded coconut, then fried till golden brown. With piña guajillo colada sauce</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Nachos Compuestos" data-price="14.00" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Nachos Compuestos</h4>
+                            <span class="price">$14.00</span>
+                        </div>
+                        <p class="description">Homemade chips topped with steak or chicken, black beans, melted cheese, guacamole, sour cream, onion, tomato and jalapeños</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Fresh Ostiones</h4>
+                            <span class="price">6 for $14.99, 12 for $18.99</span>
+                        </div>
+                        <p class="description">Fresh plump oysters served over ice, shucked and ready with fresh lime and picante sauce</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Fresh Ostiones (6)" data-price="14.99">6 for $14.99</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Fresh Ostiones (12)" data-price="18.99">12 for $18.99</button>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-name="Nachos Tejanos" data-price="10.99" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Nachos Tejanos</h4>
+                            <span class="price">$10.99</span>
+                        </div>
+                        <p class="description">Fresh yellow corn chips with refried beans, creamy queso, sour cream, guacamole, pico de gallo, and pickled jalapeños</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Texas Queso" data-price="7.99" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Texas Queso</h4>
+                            <span class="price">$7.99</span>
+                        </div>
+                        <p class="description">Yellow queso enhanced with guacamole, pico de gallo, and salsa picante</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Camarones Envueltos" data-price="15.99" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Camarones Envueltos</h4>
+                            <span class="price">$15.99</span>
+                        </div>
+                        <p class="description">Six Large shrimp, stuffed with Oaxaca cheese and jalapeño, wrapped in bacon</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Poblano Quesadilla" data-price="9.99" data-category="Appetizers">
+                        <div class="menu-item__header">
+                            <h4>Poblano Quesadilla</h4>
+                            <span class="price">$9.99</span>
+                        </div>
+                        <p class="description">Melted jack and cheddar cheese, roasted poblano peppers, and pico de gallo between flour tortillas</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Soups & Salads Section -->
+            <section id="soups-salads" class="menu-section">
+                <h2 class="section-title">🥗 Soups & Salads</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Chicken Tortilla Soup</h4>
+                            <span class="price">Small $10.99, Large $12.99</span>
+                        </div>
+                        <p class="description">Homemade chicken broth with chicken, fresh avocado, cilantro, green onion, tomato, queso fresco and tortilla strips</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Chicken Tortilla Soup (Small)" data-price="10.99">Small $10.99</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Chicken Tortilla Soup (Large)" data-price="12.99">Large $12.99</button>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-name="De la Casa Chopped Salad" data-price="9.00" data-category="Soups & Salads">
+                        <div class="menu-item__header">
+                            <h4>De la Casa Chopped Salad</h4>
+                            <span class="price">$9.00</span>
+                        </div>
+                        <p class="description">Mixed greens, black bean corn salsa, tomato, diced avocado, queso fresco, tortilla strips</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Fajita Salad</h4>
+                            <span class="price">Chicken $15.00, Steak $17.99</span>
+                        </div>
+                        <p class="description">Grilled steak or chicken with onions, mushrooms, peppers on mixed greens, avocado and queso fresco</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Fajita Salad (Chicken)" data-price="15.00">Chicken $15.00</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Fajita Salad (Steak)" data-price="17.99">Steak $17.99</button>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-name="Menudo" data-price="13.99" data-category="Soups & Salads">
+                        <div class="menu-item__header">
+                            <h4>Menudo</h4>
+                            <span class="price">$13.99</span>
+                        </div>
+                        <p class="description">Beef tripe and hominy, simmered in spicy broth served with onion, cilantro, lime, oregano and tortillas</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Ensalada de Fresa" data-price="10.00" data-category="Soups & Salads">
+                        <div class="menu-item__header">
+                            <h4>Ensalada de Fresa</h4>
+                            <span class="price">$10.00</span>
+                        </div>
+                        <p class="description">Mix of fresh greens, baby spinach, strawberries and roasted pecans with Honey Balsamic Vinaigrette</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Courses Section -->
+            <section id="main-courses" class="menu-section">
+                <h2 class="section-title">🍖 Main Courses</h2>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">Beef</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-name="Carne Arrachera" data-price="24.00" data-category="Beef">
+                            <div class="menu-item__header">
+                                <h4>Carne Arrachera</h4>
+                                <span class="price">$24.00</span>
+                            </div>
+                            <p class="description">Broiled thinly sliced skirt steak, served with jalapeño, grilled green onion, fresh guacamole and tortillas</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Asada Combo" data-price="26.00" data-category="Beef">
+                            <div class="menu-item__header">
+                                <h4>Asada Combo</h4>
+                                <span class="price">$26.00</span>
+                            </div>
+                            <p class="description">Broiled skirt steak and your choice of cheese chile relleno or cheese enchilada</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Ribeye Steak" data-price="34.00" data-category="Beef">
+                            <div class="menu-item__header">
+                                <h4>Ribeye Steak</h4>
+                                <span class="price">$34.00</span>
+                            </div>
+                            <p class="description">16 oz. bone-in ribeye, served with vegetables and Spanish rice</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Tacos Al Carbon" data-price="20.00" data-category="Beef">
+                            <div class="menu-item__header">
+                                <h4>Tacos Al Carbon</h4>
+                                <span class="price">$20.00</span>
+                            </div>
+                            <p class="description">Three corn tortillas with marinated grilled skirt steak and pico de gallo. With guacamole and queso fresco</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Steak & Lobster or Shrimp" data-price="42.00" data-category="Beef">
+                            <div class="menu-item__header">
+                                <h4>Steak & Lobster or Shrimp</h4>
+                                <span class="price">$42.00</span>
+                            </div>
+                            <p class="description">14 oz. bone-in ribeye, cooked to perfection with grilled seasoned shrimp or lobster</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="La Picosita" data-price="18.00" data-category="Beef">
+                            <div class="menu-item__header">
+                                <h4>La Picosita</h4>
+                                <span class="price">$18.00</span>
+                            </div>
+                            <p class="description">Broiled sliced skirt steak simmered in a jalapeño red pepper sauce</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Pork</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-name="Costillas del Sancho" data-price="22.99" data-category="Pork">
+                            <div class="menu-item__header">
+                                <h4>Costillas del Sancho</h4>
+                                <span class="price">$22.99</span>
+                            </div>
+                            <p class="description">Pork spare ribs with chipotle spice rub, topped with green onions, served with cabbage salsa and grilled jalapeño</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Cochinita Pibil" data-price="20.00" data-category="Pork">
+                            <div class="menu-item__header">
+                                <h4>Cochinita Pibil</h4>
+                                <span class="price">$20.00</span>
+                            </div>
+                            <p class="description">Slow roasted pork with achiote spice rub and served with tortillas. A favorite dish of Yucatan!</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Carnitas Zacatecas" data-price="19.99" data-category="Pork">
+                            <div class="menu-item__header">
+                                <h4>Carnitas Zacatecas</h4>
+                                <span class="price">$19.99</span>
+                            </div>
+                            <p class="description">Tender pulled pork sautéed with onions, lime juice and spices. Served with warm tortillas</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Chicken</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-name="Mole Poblano" data-price="18.99" data-category="Chicken">
+                            <div class="menu-item__header">
+                                <h4>Mole Poblano</h4>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p class="description">Tender grilled chicken breast simmered in traditional mole made with Mexican chocolate, peanuts, and dried chiles</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Pipian Verde" data-price="18.99" data-category="Chicken">
+                            <div class="menu-item__header">
+                                <h4>Pipian Verde</h4>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p class="description">Grilled chicken breast topped with green mole, made of roasted poblanos, pumpkin seeds, serranos and almonds</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Pollo a la Crema" data-price="18.99" data-category="Chicken">
+                            <div class="menu-item__header">
+                                <h4>Pollo a la Crema</h4>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p class="description">Grilled chicken breast with sautéed mushrooms, onions and garlic in creamy chipotle sauce</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">Seafood</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-name="Camarones a la Diabla" data-price="23.99" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Camarones a la Diabla</h4>
+                                <span class="price">$23.99</span>
+                            </div>
+                            <p class="description">Jumbo succulent shrimp, simmered in a spicy Diablo sauce</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Pepita Salmon" data-price="25.99" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Pepita Salmon</h4>
+                                <span class="price">$25.99</span>
+                            </div>
+                            <p class="description">Salmon filet with seasoned pepita crust, seared then baked, served with pipian verde sauce</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Campechana" data-price="21.00" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Campechana</h4>
+                                <span class="price">$21.00</span>
+                            </div>
+                            <p class="description">A shrimp cocktail enhanced with octopus. Served with crackers</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Caldo Siete Mares" data-price="25.99" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Caldo Siete Mares</h4>
+                                <span class="price">$25.99</span>
+                            </div>
+                            <p class="description">Seafood mix of shellfish, oysters, crab legs, and fish simmered in delicious chipotle-seafood broth</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Baja Fish Tacos" data-price="19.99" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Baja Fish Tacos</h4>
+                                <span class="price">$19.99</span>
+                            </div>
+                            <p class="description">Soft tortillas with grilled or beer battered tilapia fish, cabbage slaw, chipotle cream sauce, and avocado</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Mojarra Dorada" data-price="19.99" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Mojarra Dorada</h4>
+                                <span class="price">$19.99</span>
+                            </div>
+                            <p class="description">Whole head-on Tilapia fish, perfectly seasoned then fried until crisp outside, tender inside</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Ancho Chile Salmon" data-price="26.00" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Ancho Chile Salmon</h4>
+                                <span class="price">$26.00</span>
+                            </div>
+                            <p class="description">Salmon filet, marinated with ancho chile lime sauce then grilled to perfection</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                        <div class="menu-item" data-name="Camarones al Mojo de Ajo" data-price="23.99" data-category="Seafood">
+                            <div class="menu-item__header">
+                                <h4>Camarones al Mojo de Ajo</h4>
+                                <span class="price">$23.99</span>
+                            </div>
+                            <p class="description">Jumbo shrimp simmered in special sauce with butter, garlic, green onions, mushrooms and tomatoes</p>
+                            <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fajitas Section -->
+            <section id="fajitas" class="menu-section">
+                <h2 class="section-title">🔥 Fajitas</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Steak Fajitas</h4>
+                            <span class="price">For 1: $24.00, For 2: $38.00</span>
+                        </div>
+                        <p class="description">Sizzling steak fajitas served with warm tortillas and all the fixings</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Steak Fajitas (For 1)" data-price="24.00">For 1: $24.00</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Steak Fajitas (For 2)" data-price="38.00">For 2: $38.00</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Chicken Fajitas</h4>
+                            <span class="price">For 1: $20.00, For 2: $32.00</span>
+                        </div>
+                        <p class="description">Tender chicken fajitas served with warm tortillas and all the fixings</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Chicken Fajitas (For 1)" data-price="20.00">For 1: $20.00</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Chicken Fajitas (For 2)" data-price="32.00">For 2: $32.00</button>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-name="Steak & Chicken Fajitas (For 2)" data-price="38.99" data-category="Fajitas">
+                        <div class="menu-item__header">
+                            <h4>Steak & Chicken Fajitas</h4>
+                            <span class="price">For 2: $38.99</span>
+                        </div>
+                        <p class="description">Best of both worlds - steak and chicken fajitas served with warm tortillas and all the fixings</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Shrimp Fajitas</h4>
+                            <span class="price">For 1: $24.00, For 2: $35.00</span>
+                        </div>
+                        <p class="description">Grilled shrimp fajitas served with warm tortillas and all the fixings</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Shrimp Fajitas (For 1)" data-price="24.00">For 1: $24.00</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Shrimp Fajitas (For 2)" data-price="35.00">For 2: $35.00</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Pork Carnitas Fajitas</h4>
+                            <span class="price">For 1: $20.00, For 2: $32.00</span>
+                        </div>
+                        <p class="description">Tender pork carnitas fajitas served with warm tortillas and all the fixings</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Pork Carnitas Fajitas (For 1)" data-price="20.00">For 1: $20.00</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Pork Carnitas Fajitas (For 2)" data-price="32.00">For 2: $32.00</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enchiladas Section -->
+            <section id="enchiladas" class="menu-section">
+                <h2 class="section-title">🌯 Enchiladas</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-name="Enchiladas de Mole" data-price="15.99" data-category="Enchiladas">
+                        <div class="menu-item__header">
+                            <h4>Enchiladas de Mole</h4>
+                            <span class="price">$15.99</span>
+                        </div>
+                        <p class="description">Stuffed with chicken, Mole poblano sauce and topped with Mexican crema</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Enchiladas Aztlan" data-price="14.99" data-category="Enchiladas">
+                        <div class="menu-item__header">
+                            <h4>Enchiladas Aztlan</h4>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p class="description">Stacked enchiladas with black beans, pico, Jack Cheese, spicy chicken, and sour cream</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Enchiladas Bandera" data-price="15.99" data-category="Enchiladas">
+                        <div class="menu-item__header">
+                            <h4>Enchiladas Bandera</h4>
+                            <span class="price">$15.99</span>
+                        </div>
+                        <p class="description">One beef with Ranchero, One chicken with blanco sauce, One queso fresco with verde sauce</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Enchiladas Suizas" data-price="15.99" data-category="Enchiladas">
+                        <div class="menu-item__header">
+                            <h4>Enchiladas Suizas</h4>
+                            <span class="price">$15.99</span>
+                        </div>
+                        <p class="description">Stuffed with chicken tinga, topped with tomatillo salsa verde, chopped cabbage, sour cream, and queso fresco</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Enchiladas Blancas" data-price="16.99" data-category="Enchiladas">
+                        <div class="menu-item__header">
+                            <h4>Enchiladas Blancas</h4>
+                            <span class="price">$16.99</span>
+                        </div>
+                        <p class="description">Chicken, Poblano rajas, corn, red onions and garlic topped with homemade salsa blanca & queso fresco</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vegetarian Section -->
+            <section id="vegetarian" class="menu-section">
+                <h2 class="section-title">🥬 Vegetarian</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-name="Chile Relleno Especial" data-price="15.99" data-category="Vegetarian">
+                        <div class="menu-item__header">
+                            <h4>Chile Relleno Especial</h4>
+                            <span class="price">$15.99</span>
+                        </div>
+                        <p class="description">Poblano pepper stuffed with Quinoa, Zucchini and Oaxaca cheese with roasted tomato salsa</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Portobello Tacos" data-price="14.99" data-category="Vegetarian">
+                        <div class="menu-item__header">
+                            <h4>Portobello Tacos</h4>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p class="description">Three soft corn tortillas dipped in guajillo chile sauce, stuffed with sautéed Portobello mushrooms</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Spinach Enchiladas" data-price="14.99" data-category="Vegetarian">
+                        <div class="menu-item__header">
+                            <h4>Spinach Enchiladas</h4>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p class="description">Two corn tortillas stuffed with sautéed fresh spinach, corn, tomato, onion, roasted garlic and Serrano pepper</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Enchiladas Poblanas" data-price="14.99" data-category="Vegetarian">
+                        <div class="menu-item__header">
+                            <h4>Enchiladas Poblanas</h4>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p class="description">Two corn tortillas stuffed with summer squash, zucchini, onion and tomato topped with poblano cream sauce</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Kids Menu Section -->
+            <section id="kids-menu" class="menu-section">
+                <h2 class="section-title">🧒 Kids Menu</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-name="One Crispy Taco" data-price="5.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>One Crispy Taco</h4>
+                            <span class="price">$5.99</span>
+                        </div>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="One Enchilada" data-price="5.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>One Enchilada</h4>
+                            <span class="price">$5.99</span>
+                        </div>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Burrito Asadero" data-price="7.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>Burrito Asadero</h4>
+                            <span class="price">$7.99</span>
+                        </div>
+                        <p class="description">Chicken or steak</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Mini Quesadilla" data-price="6.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>Mini Quesadilla</h4>
+                            <span class="price">$6.99</span>
+                        </div>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Mini Chimichanga" data-price="6.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>Mini Chimichanga</h4>
+                            <span class="price">$6.99</span>
+                        </div>
+                        <p class="description">Topped with Texas Queso</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Chicken Strips" data-price="6.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>Chicken Strips</h4>
+                            <span class="price">$6.99</span>
+                        </div>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Baby Plate" data-price="4.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>Baby Plate</h4>
+                            <span class="price">$4.99</span>
+                        </div>
+                        <p class="description">Ground beef or shredded chicken</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="One Asada Taco" data-price="6.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>One Asada Taco</h4>
+                            <span class="price">$6.99</span>
+                        </div>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Cheeseburger" data-price="7.99" data-category="Kids Menu">
+                        <div class="menu-item__header">
+                            <h4>Cheeseburger</h4>
+                            <span class="price">$7.99</span>
+                        </div>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Desserts Section -->
+            <section id="desserts" class="menu-section">
+                <h2 class="section-title">🍰 Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-name="Homemade Orange Flan" data-price="7.99" data-category="Desserts">
+                        <div class="menu-item__header">
+                            <h4>Homemade Orange Flan</h4>
+                            <span class="price">$7.99</span>
+                        </div>
+                        <p class="description">House made Mexican custard in seasonal flavors</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Sopapillas" data-price="6.99" data-category="Desserts">
+                        <div class="menu-item__header">
+                            <h4>Sopapillas</h4>
+                            <span class="price">$6.99</span>
+                        </div>
+                        <p class="description">Traditional fresh Mexican puff pastry sprinkled with cinnamon sugar. Served with honey</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Fried Ice Cream" data-price="6.99" data-category="Desserts">
+                        <div class="menu-item__header">
+                            <h4>Fried Ice Cream</h4>
+                            <span class="price">$6.99</span>
+                        </div>
+                        <p class="description">Delicious treat made with vanilla ice cream, topped with chocolate or strawberry sauce</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Tres Leches" data-price="8.99" data-category="Desserts">
+                        <div class="menu-item__header">
+                            <h4>Tres Leches</h4>
+                            <span class="price">$8.99</span>
+                        </div>
+                        <p class="description">Traditional Mexican cake, rich, moist and sweet</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Breakfast Section -->
+            <section id="breakfast" class="menu-section">
+                <h2 class="section-title">🍳 Breakfast</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-name="Huevos Rancheros" data-price="9.95" data-category="Breakfast">
+                        <div class="menu-item__header">
+                            <h4>Huevos Rancheros</h4>
+                            <span class="price">$9.95</span>
+                        </div>
+                        <p class="description">Fried corn tortilla topped with two sunny-side-up eggs covered with homemade Ranchero sauce</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Huevos a la Mexicana" data-price="9.95" data-category="Breakfast">
+                        <div class="menu-item__header">
+                            <h4>Huevos a la Mexicana</h4>
+                            <span class="price">$9.95</span>
+                        </div>
+                        <p class="description">Two scrambled eggs with tomatoes, onions and serrano peppers</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Arrachera and Eggs" data-price="14.95" data-category="Breakfast">
+                        <div class="menu-item__header">
+                            <h4>Arrachera and Eggs</h4>
+                            <span class="price">$14.95</span>
+                        </div>
+                        <p class="description">Arrachera beef steak with two eggs any style, Mexican potatoes and tortillas</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Chilaquiles Tradicionales" data-price="8.95" data-category="Breakfast">
+                        <div class="menu-item__header">
+                            <h4>Chilaquiles Tradicionales</h4>
+                            <span class="price">$8.95</span>
+                        </div>
+                        <p class="description">Fried corn tortilla pieces covered with homemade salsa roja, topped with Mexican crema, queso fresco and red onions</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item" data-name="Texas Omelette" data-price="10.95" data-category="Breakfast">
+                        <div class="menu-item__header">
+                            <h4>Texas Omelette</h4>
+                            <span class="price">$10.95</span>
+                        </div>
+                        <p class="description">Three egg omelette filled with pico de gallo and cheese blend, topped with chorizo</p>
+                        <button class="btn btn--primary btn--add-to-order">Add to Order</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h4>Breakfast Taco Combo</h4>
+                            <span class="price">2 Tacos $6.95, 3 Tacos $9.95</span>
+                        </div>
+                        <p class="description">Choose from: Potatoes & Egg, Chorizo & Egg, Ham & Egg, Bacon & Egg, Sausage & Egg, Barbacoa</p>
+                        <div class="btn-group">
+                            <button class="btn btn--primary btn--add-to-order" data-name="Breakfast Taco Combo (2 Tacos)" data-price="6.95">2 Tacos $6.95</button>
+                            <button class="btn btn--primary btn--add-to-order" data-name="Breakfast Taco Combo (3 Tacos)" data-price="9.95">3 Tacos $9.95</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Sticky Cart -->
+    <div id="cart" class="cart hidden">
+        <div class="cart__summary" id="cart-summary">
+            <div class="cart__icon">🛒</div>
+            <div class="cart__info">
+                <span id="cart-count">0</span> items
+            </div>
+            <div class="cart__total">
+                $<span id="cart-total">0.00</span>
+            </div>
+            <button class="cart__toggle" id="cart-toggle" aria-label="Toggle cart">
+                <span class="cart__arrow">↑</span>
+            </button>
+        </div>
+        
+        <div class="cart__details" id="cart-details">
+            <div class="cart__header">
+                <h3>Your Order</h3>
+                <button class="cart__close" id="cart-close">×</button>
+            </div>
+            <div class="cart__items" id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart__footer">
+                <div class="cart__totals">
+                    <div class="cart__subtotal">
+                        Subtotal: $<span id="cart-subtotal">0.00</span>
+                    </div>
+                    <div class="cart__tax">
+                        Tax (8.25%): $<span id="cart-tax">0.00</span>
+                    </div>
+                    <div class="cart__final-total">
+                        Total: $<span id="cart-final-total">0.00</span>
+                    </div>
+                </div>
+                <button class="btn btn--primary btn--full-width" id="finalize-order">
+                    Finalize Order
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Summary Modal -->
+    <div id="order-modal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>Order Summary</h2>
+                <button class="modal__close" id="modal-close">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="order-summary">
+                    <div class="order-items" id="order-items">
+                        <!-- Order items will be populated here -->
+                    </div>
+                    
+                    <div class="order-totals">
+                        <div class="total-line">
+                            <span>Subtotal:</span>
+                            <span>$<span id="order-subtotal">0.00</span></span>
+                        </div>
+                        <div class="total-line">
+                            <span>Tax (8.25%):</span>
+                            <span>$<span id="order-tax">0.00</span></span>
+                        </div>
+                        <div class="total-line total-line--final">
+                            <span>Total:</span>
+                            <span>$<span id="order-total">0.00</span></span>
+                        </div>
+                    </div>
+
+                    <form class="order-form" id="order-form">
+                        <h3>Customer Information</h3>
+                        <div class="form-group">
+                            <label class="form-label" for="customer-name">Name *</label>
+                            <input type="text" id="customer-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="customer-phone">Phone *</label>
+                            <input type="tel" id="customer-phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="customer-email">Email</label>
+                            <input type="email" id="customer-email" class="form-control">
+                        </div>
+                        
+                        <h3>Order Type</h3>
+                        <div class="order-type">
+                            <label class="radio-label">
+                                <input type="radio" name="order-type" value="pickup" checked>
+                                <span>Pickup</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="order-type" value="delivery">
+                                <span>Delivery</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn--outline" id="back-to-menu">Back to Menu</button>
+                <button class="btn btn--primary" id="place-order">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>🎉 Order Confirmed!</h2>
+                <button class="modal__close" id="confirmation-close">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="confirmation-content">
+                    <p>Thank you for your order! We've received your request and will begin preparing your food shortly.</p>
+                    <div class="confirmation-details">
+                        <h4>Order Details:</h4>
+                        <p><strong>Order #:</strong> <span id="order-number"></span></p>
+                        <p><strong>Customer:</strong> <span id="confirmation-name"></span></p>
+                        <p><strong>Phone:</strong> <span id="confirmation-phone"></span></p>
+                        <p><strong>Type:</strong> <span id="confirmation-type"></span></p>
+                        <p><strong>Total:</strong> $<span id="confirmation-total">0.00</span></p>
+                    </div>
+                    <p class="confirmation-note">You will receive a call when your order is ready!</p>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn--primary btn--full-width" id="start-new-order">Start New Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Casa Chapala</h3>
+                    <p>Authentic Mexican Cuisine & Tequila Bar</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Austin Location</h4>
+                    <p>9041 Research Blvd.<br>Austin, TX 78758</p>
+                    <p>(512) 459-4242</p>
+                    <a href="http://casachapala.com" target="_blank">casachapala.com</a>
+                </div>
+                <div class="footer__section">
+                    <h4>Bastrop Location</h4>
+                    <p>1800 Walnut St.<br>Bastrop, TX 78602</p>
+                    <p>(512) 985-5788</p>
+                    <a href="http://casachapalabastrop.com" target="_blank">casachapalabastrop.com</a>
+                </div>
+                <div class="footer__section">
+                    <h4>Hours & Events</h4>
+                    <p>🎵 Mariachi Every Friday!</p>
+                    <p>🍹 Happy Hour Mon-Thu 11AM-7PM<br>Fri 11AM-6PM</p>
+                    <p>📧 Contact us for catering</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Casa Chapala. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
